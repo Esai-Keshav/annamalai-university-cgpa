@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 const App = () => {
-  const [marks, setmarks] = useState();
-  const [grade, setgrade] = useState();
+  const [marks, setmarks] = useState("");
+  const [grade, setgrade] = useState("");
   const [data, setData] = useState({
     mark: [],
     grade: [],
@@ -22,7 +22,7 @@ const App = () => {
         {/* Data Grid */}
 
         <h1 className="font-pop font-bold text-2xl md:text-4xl text-slate-700  text-center">
-          Annamalai University Cgpa Calculator
+          Annamalai University CGPA Calculator
         </h1>
         <div className="grid w-fit grid-cols-2 gap-5 rounded-2xl p-6 shadow-[9px_9px_16px_#a3b1c6,-9px_-9px_16px_#ffffff]">
           <div className="flex flex-col items-center">
@@ -63,7 +63,7 @@ const App = () => {
             <input
               value={marks}
               type="number"
-              placeholder="Enter credit"
+              placeholder="Enter credit hrs"
               onChange={(e) => setmarks(e.target.value)}
               className="rounded-xl bg-[#e0e5ec] mx-auto px-4 py-2 w-1/2 font-inter placeholder:font-inter text-gray-800 shadow-[inset_2px_2px_5px_#a3b1c6,inset_-2px_-2px_5px_#ffffff] focus:outline-none [appearance:textfield] 
              [&::-webkit-outer-spin-button]:appearance-none 
@@ -72,7 +72,7 @@ const App = () => {
             <input
               value={grade}
               type="number"
-              placeholder="Enter grade"
+              placeholder="Enter grade points"
               onChange={(e) => setgrade(e.target.value)}
               className="rounded-xl bg-[#e0e5ec] px-4 py-2 w-1/2  placeholder:font-inter font-inter text-gray-800 shadow-[inset_2px_2px_5px_#a3b1c6,inset_-2px_-2px_5px_#ffffff] focus:outline-none [appearance:textfield] 
              [&::-webkit-outer-spin-button]:appearance-none 
@@ -82,12 +82,14 @@ const App = () => {
 
           <button
             onClick={() => {
-              setData((prev) => ({
-                mark: [...prev.mark, marks],
-                grade: [...prev.grade, grade],
-              }));
-              setmarks("");
-              setgrade("");
+              if (marks && grade) {
+                setData((prev) => ({
+                  mark: [...prev.mark, marks],
+                  grade: [...prev.grade, grade],
+                }));
+                setmarks("");
+                setgrade("");
+              }
             }}
             className="rounded-xl text-xl font-semibold text-emerald-600   bg-[#e0e5ec] px-6 py-2 font-pop shadow-[5px_5px_10px_#a3b1c6,-5px_-5px_10px_#ffffff] transition-all active:shadow-[inset_5px_5px_10px_#a3b1c6,inset_-5px_-5px_10px_#ffffff]"
           >

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-
+import github from "./assets/github-mark.svg";
+import linkedin from "./assets/linkedin.png";
 const App = () => {
   const [marks, setmarks] = useState("");
   const [grade, setgrade] = useState("");
@@ -96,6 +97,18 @@ const App = () => {
             Add
           </button>
         </div>
+
+        <footer className="mt-40 flex gap-4 items-center">
+          <a
+            href="https://github.com/Esai-Keshav/annamalai-university-cgpa"
+            target="_blank"
+          >
+            <img src={github} alt="" className="size-7" />
+          </a>
+          <a href="https://www.linkedin.com/in/esai-keshav/" target="_blank">
+            <img src={linkedin} alt="" className="size-7" />
+          </a>
+        </footer>
       </div>
     </>
   );

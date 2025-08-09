@@ -15,8 +15,8 @@ export default defineConfig({
         short_name: "CGPA Calc",
 
         display: "standalone",
-        background_color: "#ffffff",
-        // theme_color: "#4ade80", // Tailwind green-400
+        background_color: "#e0e5ec",
+        theme_color: "#e0e5ec", // Tailwind green-400
         icons: [
           {
             src: "react.png", // file in /public
@@ -27,7 +27,9 @@ export default defineConfig({
       },
     }),
   ],
-  base: "/annamalai-university-cgpa",
+
+  // base: "/annamalai-university-cgpa",
+
   server: {
     host: "0.0.0.0",
     port: 5173,

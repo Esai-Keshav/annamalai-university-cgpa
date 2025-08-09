@@ -1,1 +1,1 @@
-{"name":"Annamalai University CGPA Calculator","short_name":"CGPA Calc","start_url":"/annamalai-university-cgpa/","display":"standalone","background_color":"#ffffff","theme_color":"#42b883","lang":"en","scope":"/annamalai-university-cgpa/","icons":[{"src":"react.png","sizes":"512x512","type":"image/png"}]}
+{"name":"Annamalai University CGPA Calculator","short_name":"CGPA Calc","start_url":"/","display":"standalone","background_color":"#e0e5ec","theme_color":"#e0e5ec","lang":"en","scope":"/","icons":[{"src":"react.png","sizes":"512x512","type":"image/png"}]}

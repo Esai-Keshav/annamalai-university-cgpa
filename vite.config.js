@@ -28,7 +28,7 @@ export default defineConfig({
     }),
   ],
 
-  // base: "/annamalai-university-cgpa",
+  base: "/annamalai-university-cgpa",
 
   server: {
     host: "0.0.0.0",

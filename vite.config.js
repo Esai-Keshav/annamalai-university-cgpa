@@ -19,9 +19,9 @@ export default defineConfig({
         theme_color: "#4ade80", // Tailwind green-400
         icons: [
           {
-            src: "react.svg", // file in /public
+            src: "react.png", // file in /public
             sizes: "512x512",
-            type: "image/svg+xml",
+            type: "image/png",
           },
         ],
       },

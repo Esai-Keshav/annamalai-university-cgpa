@@ -20,6 +20,10 @@ const App = () => {
     <>
       <div className="flex min-h-screen flex-col items-center gap-8 bg-[#e0e5ec] p-6">
         {/* Data Grid */}
+
+        <h1 className="font-pop font-bold text-2xl md:text-4xl text-slate-700  text-center">
+          Annamalai University Cgpa Calculator
+        </h1>
         <div className="grid w-fit grid-cols-2 gap-5 rounded-2xl p-6 shadow-[9px_9px_16px_#a3b1c6,-9px_-9px_16px_#ffffff]">
           <div className="flex flex-col items-center">
             <h1 className="mb-2 font-semibold text-gray-700 font-pop">
@@ -50,7 +54,7 @@ const App = () => {
         </div>
 
         <h1 className="font-pop text-3xl font-semibold text-blue-600">
-          {cgpa}
+          {isNaN(cgpa) ? "0.00" : cgpa}
         </h1>
 
         {/* Input Section */}
@@ -61,14 +65,18 @@ const App = () => {
               type="number"
               placeholder="Enter credit"
               onChange={(e) => setmarks(e.target.value)}
-              className="rounded-xl bg-[#e0e5ec] mx-auto px-4 py-2 w-1/2 font-inter placeholder:font-inter text-gray-800 shadow-[inset_2px_2px_5px_#a3b1c6,inset_-2px_-2px_5px_#ffffff] focus:outline-none"
+              className="rounded-xl bg-[#e0e5ec] mx-auto px-4 py-2 w-1/2 font-inter placeholder:font-inter text-gray-800 shadow-[inset_2px_2px_5px_#a3b1c6,inset_-2px_-2px_5px_#ffffff] focus:outline-none [appearance:textfield] 
+             [&::-webkit-outer-spin-button]:appearance-none 
+             [&::-webkit-inner-spin-button]:appearance-none"
             />
             <input
               value={grade}
               type="number"
               placeholder="Enter grade"
               onChange={(e) => setgrade(e.target.value)}
-              className="rounded-xl bg-[#e0e5ec] px-4 py-2 w-1/2  placeholder:font-inter font-inter text-gray-800 shadow-[inset_2px_2px_5px_#a3b1c6,inset_-2px_-2px_5px_#ffffff] focus:outline-none"
+              className="rounded-xl bg-[#e0e5ec] px-4 py-2 w-1/2  placeholder:font-inter font-inter text-gray-800 shadow-[inset_2px_2px_5px_#a3b1c6,inset_-2px_-2px_5px_#ffffff] focus:outline-none [appearance:textfield] 
+             [&::-webkit-outer-spin-button]:appearance-none 
+             [&::-webkit-inner-spin-button]:appearance-none"
             />
           </div>
 
@@ -81,7 +89,7 @@ const App = () => {
               setmarks("");
               setgrade("");
             }}
-            className="rounded-xl text-xl font-semibold bg-[#e0e5ec] px-6 py-2 font-pop shadow-[5px_5px_10px_#a3b1c6,-5px_-5px_10px_#ffffff] transition-all active:shadow-[inset_5px_5px_10px_#a3b1c6,inset_-5px_-5px_10px_#ffffff]"
+            className="rounded-xl text-xl font-semibold text-emerald-600   bg-[#e0e5ec] px-6 py-2 font-pop shadow-[5px_5px_10px_#a3b1c6,-5px_-5px_10px_#ffffff] transition-all active:shadow-[inset_5px_5px_10px_#a3b1c6,inset_-5px_-5px_10px_#ffffff]"
           >
             Add
           </button>

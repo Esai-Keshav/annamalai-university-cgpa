@@ -13,7 +13,7 @@ export default defineConfig({
       manifest: {
         name: "Annamalai University CGPA Calculator",
         short_name: "CGPA Calc",
-        start_url: ".",
+
         display: "standalone",
         background_color: "#ffffff",
         theme_color: "#4ade80", // Tailwind green-400
@@ -27,7 +27,7 @@ export default defineConfig({
       },
     }),
   ],
-  // base: "/annamalai-university-cgpa",
+  base: "/annamalai-university-cgpa",
   server: {
     host: "0.0.0.0",
     port: 5173,

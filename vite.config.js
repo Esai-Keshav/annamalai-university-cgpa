@@ -16,7 +16,7 @@ export default defineConfig({
 
         display: "standalone",
         background_color: "#ffffff",
-        theme_color: "#4ade80", // Tailwind green-400
+        // theme_color: "#4ade80", // Tailwind green-400
         icons: [
           {
             src: "react.png", // file in /public

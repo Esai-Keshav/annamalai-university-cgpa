@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import github from "./assets/github-mark.svg";
-import linkedin from "./assets/linkedin.png";
+import linkedin from "./assets/linkedin.webp";
 const App = () => {
   const [marks, setmarks] = useState("");
   const [grade, setgrade] = useState("");

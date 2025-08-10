@@ -98,7 +98,7 @@ const App = () => {
           </button>
         </div>
 
-        <footer className="mt-40 flex gap-4 items-center">
+        <footer className="mt-44 flex gap-4 items-center">
           <a
             href="https://github.com/Esai-Keshav/annamalai-university-cgpa"
             target="_blank"
@@ -109,6 +109,18 @@ const App = () => {
             <img src={linkedin} alt="" className="size-7" />
           </a>
         </footer>
+
+        <h3 className="font-pop text-base  text-center">
+          Developed by{" "}
+          <a
+            href="https://github.com/Esai-Keshav"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline hover:text-blue-600 "
+          >
+            Esai
+          </a>
+        </h3>
       </div>
     </>
   );

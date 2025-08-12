@@ -73,7 +73,7 @@ const App = () => {
             <input
               value={grade}
               type="number"
-              placeholder="Enter grade points"
+              placeholder="Enter credit point"
               onChange={(e) => setgrade(e.target.value)}
               className="rounded-xl bg-[#e0e5ec] px-4 py-2 w-1/2  placeholder:font-inter font-inter text-gray-800 shadow-[inset_2px_2px_5px_#a3b1c6,inset_-2px_-2px_5px_#ffffff] focus:outline-none [appearance:textfield] 
              [&::-webkit-outer-spin-button]:appearance-none 
